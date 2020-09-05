@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-import django_on_heroku
+import django_heroku
 import dj_database_url
 from decouple import config
 
@@ -125,4 +125,4 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-django_on_heroku.settings(locals())
+django_heroku.settings(locals())
