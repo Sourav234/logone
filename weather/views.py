@@ -4,7 +4,7 @@ from .models import City
 from .forms import CityForm
 from django.contrib.auth.decorators import login_required
 
-@login_required
+
 def index(request):
 
     cities = City.objects.all()    

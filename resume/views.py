@@ -5,7 +5,7 @@ from django.urls import reverse_lazy
 from django.views import generic
 # Create your views here.
 
-@login_required
+
 def home(request):
     return render(request,'home.html')
 
